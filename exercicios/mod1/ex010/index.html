@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <!-- Quando falamos sobre âncora quer dizer que estou me ligando em um site externo ou interno -->
+    <h1>Trabalhando com Links</h1>
+        <h2>Usando links externos</h2>
+        <!-- href -> referência da minha URL -->
+        <p>Você pode acessar o <a href="https://google.com.br">Google</a></p>
+        <p>Você também pode acessar ao canal da <a href="https://youtube.com.br/GrowthTV">Growth no Youtube</a></p>
+        <h2>Usando links internos</h2>
+        <!-- Os links internos não precisam colocar a URL toda. -->
+         <!-- Usamos o rel para indicar qual a natureza do destino -->
+        <p>Você pode acessar o link interno <a href="pagina2.html" rel="next" target="_self">página 2</a></p>
+        <p>Você pode acessar a minha <a href="noticias/pagina3.html">Notícias</a></p>
+        <!-- Usamos download para dizer ao meu navegador que quero baixar aquele arquivo e o type para mostrar que tipo de arquivo está sendo baixado -->
+        <!-- Também temos uma lista de todos os Medias Types que podemos usar para mostrar qual arquivo está sendo baixadp. No link -> iana.org -->
+        <p><a href="livro/Livro.pdf" download="Livro.pdf" type="application/pdf">Baixar em PDF</a></p>
+        <p><a href="livro/Livro.zip" download="Livro.zip" type="application/zip">Baixar em ZIP</a></p>
+    
+    <h1>Praticando os Links</h1>
+        <!-- hreflang indica ao navegador ou mecanismo de busca o idioma e a região do meu link. -->
+        <p>Você pode acessar a site <a href="https://w3schools.com/html" hreflang="en">W3 School</a></p>
+        <!-- Para controlar o fluxo do usuário no meu site, caso eu use um link externo que o leve para fora do meu site, eu irei usar o atributo target. -->
+         <p>Você pode controlar o fluxo dessa forma &xrarr; <a href="https://youtube.com.br" target="_blank">Link</a></p>
+         <!-- Também temos a opção de indicar qual é a natureza ou ponto de destino do meu link usando o atributo rel. -->
+          <p>Vamos testar agora o atributo <a href="https://facebook.com" target="_blank" rel="external">rel</a></p>          
+</body>
+</html>

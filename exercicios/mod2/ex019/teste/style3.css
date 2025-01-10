@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Seletores de atributos */
+[meu-atributo]{
+    background-color: yellow;
+}
+
+/* Escolherá um valor que precisa conter a palavra exata, sem preocupar-se com o espaçamento entre as palavras. */
+[meu-atributo ~= 'valor2']{
+    background-color: rgb(255, 145, 0);
+}
+/* Escolherá um valor que precisa ser o primeiro valor do meu atributo, que será seguido por um '-'(traço). */
+[meu-parágrafo |= 'valor']{
+    background-color: aqua;
+}
+
+/* Selecionará o começo do valor, precisa ser a palavra exata que foi escrita. */
+[atributo ^= 'He']{
+    font-weight: bold;
+}
+
+/* Selecionará que contêm determinado valor */
+[atributo2 *= 'ello']{
+    font-weight: bold;
+}
+
+/* Selecionará que terminará com determinado valor */
+[atributo3 $= 'rld']{
+    font-weight: bold;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <!-- Usando no cabeçalho para definir como um padrão para o body, ou seja, todas as tags herdarão as características que eu definir -->
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, temos um <b>termo em negrito</b> usando a tag &lt;b &gt; (não semântica)</p>
+    <!-- Nesse caso o sentido dessa frase, que o texo que eu deixei 
+     em negrito tem uma força maior de destaque. -->
+    <p>Já nesta frase, temos um <strong>termo em negrito</strong> usando a tag &lt;strong&gt; (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <!-- Um atalho para colocar frases dentro das tags, usando o atalho 'CTRL + SHIFT + P , depois clique em 'Emmet: Wrap with Abbreviation'' -->
+     <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt; i &gt; (não semântica)</p>
+     <!--Serve para eu dar ênfase para uma informação no meu texto.-->
+     <p>Nesta frase, temos um <em>termo em itálico ()</em> usando a tag &lt; em &gt; (semântica)</p>
+     <h2>Texto marcado</h2>
+     <!-- Usamos o <mark> , no HTML, para dizer que aquela frase ou palavrada está marcada para dar ainda mais ênfase e a forma como a cor é mostrada eu posso manipular usando CSS -->
+     <p>Podemos usar a tag <mark>&lt; mark &gt;</mark> para enfatizar ainda mais a frase.</p>
+     <p>Agora iremos usar os <mark>Seletores</mark> para estilizar.</p>
+     <h2>Texto grande e texto pequeno</h2>
+     <!-- A tag <big> está obsoleta, enquanto a tag <small> não. Por causa que a tag <big> não possui uma semântica e a <small> possui uma semântica -->
+     <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+     <h2>Texto deletado</h2>
+     <p>Esse tipo de texto pode estar ali <del>mas ele deve ser desconsiderado</del></p>
+     <h2>Texto inserido ou importante</h2>
+     <p>Nesse o texto ou frase está ali e <ins>você deve prestar bastante atenção, o famoso sublinhado</ins></p>
+     <p>Também existe o <u>sublinhado</u> com a tag &lt;u&gt; (Não semântica) </p>
+     <h2>Texto sobrescrito</h2>
+     <p>Para inserir coisas do tipo x<sup>20</sup> + 3</p>
+     <h2>Texto subscrito</h2>
+     <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+</body>
+</html>

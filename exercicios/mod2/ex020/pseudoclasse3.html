@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+</head>
+<style>
+    #checkbox{
+        width: 30px;
+        height: 30px;
+    }
+
+    #checkbox:checked + p{
+        background-color: rgb(222, 14, 222);
+        color: white;
+    }
+    /*A pseudoclasse 'not', será uma pseudoclasse de negação.*/
+    #checkbox:not(:checked) + p{
+        background-color: yellow;
+    }
+
+    .pai li:nth-child(1){
+        background-color: blue;
+    }
+
+    .pai li:nth-child(2n){
+        background-color: red;
+    }
+
+    /* A pseudoclasse 'nth-child' será com base no índice do elemento */
+    .pai li:nth-child(2n + 5){
+        background-color: rgb(0, 255, 81);
+    }
+
+</style>
+<body>
+    <h1>Mais sobre Pseudoclasses</h1>
+    <input type="checkbox" id="checkbox">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem repudiandae dolores iusto nemo iure, asperiores, rerum eum cumque quas veniam impedit. Ullam accusamus consequatur sunt excepturi laudantium repellat totam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem repudiandae dolores iusto nemo iure, asperiores, rerum eum cumque quas veniam impedit. Ullam accusamus consequatur sunt excepturi laudantium repellat totam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem repudiandae dolores iusto nemo iure, asperiores, rerum eum cumque quas veniam impedit. Ullam accusamus consequatur sunt excepturi laudantium repellat totam!</p>
+    <ul class="pai">
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+    </ul>
+</body>
+</html>

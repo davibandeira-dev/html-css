@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+
+    header{
+        background-color: rgb(123, 10, 185);
+        padding: 5px 0px 10px 5px;
+        margin: auto;
+    }
+
+    header > h1{
+        background-color: white;
+        color: rgb(103, 7, 155);
+        padding: 10px;
+        width: 400px;
+        box-shadow: 5px 2px 10px 2px rgba(0, 0, 0, 0.379) ;
+    }
+
+    nav{
+        background-color: black;
+        width: 400px;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.379) ;
+    }
+
+    nav > a{
+        text-decoration: none;
+        color: rgb(192, 109, 234);
+        margin-right: 10px;
+    }
+
+    nav > a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+
+    section > h1{
+        font-size: 32px;
+        width: 200px;
+        border: 1px solid;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+        margin-left: 10px;
+        padding-left: 5px ;
+    }
+    
+    section > h2{
+        background-color: rgb(187, 60, 255);
+        width: 200px;
+         border: 1px solid;
+        border-radius: 5px 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+        margin-left: 10px;
+        padding-left: 10px ;
+    }
+
+    section > article{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5px;
+    }
+
+    footer > p{
+        /* O agente usúario, ou seja, o navegador já tinha colocado o margin. */
+        margin: 0px;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;        
+    }
+
+    div{
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: black;
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Meu primeiro site</h1>
+        <nav>
+            <a href="#">Navegação</a>
+            <a href="#">Navegação</a>
+            <a href="#">Navegação</a>
+            <a href="#">Navegação</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Notícias</h1>
+            <h2>Esportes</h2>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quibusdam maxime est iusto sed? Ut modi molestiae veritatis reiciendis voluptas delectus ab doloribus vitae error culpa, cumque dignissimos obcaecati debitis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio, laboriosam neque accusamus autem molestiae et ipsum. Assumenda ea adipisci animi amet optio illo voluptatibus, recusandae laboriosam cumque facilis ratione!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quibusdam maxime est iusto sed? Ut modi molestiae veritatis reiciendis voluptas delectus ab doloribus vitae error culpa, cumque dignissimos obcaecati debitis.</p>
+
+            </article>
+            <h2>Tecnologia</h2>
+            <article>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quod fugit sint harum vero porro quibusdam! Neque veritatis molestiae sapiente quae ex quaerat alias saepe repellendus culpa nulla, ad tenetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos facilis vel itaque eos expedita, eveniet autem non ad nulla deserunt veritatis magni numquam. Nihil, porro! Dignissimos provident necessitatibus a! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore qui rerum necessitatibus maiores ad alias, est velit aliquam fuga deleniti consequuntur pariatur reprehenderit aliquid illum aperiam possimus consequatur odio eaque!</p>
+                <aside>
+
+                </aside>
+            </article>
+        </section>
+        <aside>
+
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido por Davi Bandeira Tavares</p>
+    </footer>
+    <div></div>
+</body>
+</html>

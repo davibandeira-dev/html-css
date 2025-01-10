@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* Seletor all  */
+*{
+    background-color: lightcoral;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 1px black;
+    text-shadow: 0 0 1px black;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <!-- O código fonte é basicamente a origem do meu programa, ou seja, todos os códigos que geraram o meu programa. Ou são partes de código.-->
+    <h2>Código fonte / Pré-formatação</h2>
+    <!-- A tag <code> ela é usada para mostrar ao navegador que aquela frase ou texto é um código de computador e também deixará todas letras no modo mono-espaçado, ou seja, todas as letras terão o mesmo espaço de ocupação ou mesmo tamanho.-->
+    <p>O comando <code>documents.getElementById('teste')</code> é em escrito em linguagem JavaScript </p>
+    <!-- Mas o code ele não organiza com identação, por isso usaremos a tag <pre> -->
+
+    <pre>
+        <!-- Clique Shift + Tab, para voltar a identação -->
+        <code>
+n = 0
+if n == 0:
+    print('Número igual a zero!')
+else:
+    print('Número diferente de zero!')
+print('Fim do Programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <!-- A tag <q> será usada para citar, mas não use as aspas pois a <q> é um tag semântica.-->
+    <p>Como diria o filósofo Socrátes: <q>Só sei que nada sei</q>.</p>
+    <!-- Esse atributo irá mostrar que essa frase não é minha, respeitando assim os direitos de quem reproduz conteúdo. -->
+     <h2>Citações completas</h2>
+    <blockquote cite="https://www.pensador.com/poemas_de_socrates/2/">
+        Nenhum cidadão tem o direito de ser um amador em matéria de treinamento físico. Que desgraça é para o homem envelhecer sem nunca ver a beleza e a força do que o seu corpo é capaz.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <!-- Essa tag <abbr> será usada para mostrar ao navegador que essas siglas são abreviações de outras palavras -->
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, futuramente estudarei <abbr title="Java Script">JS</abbr></p>
+    <h2>Texto Invertido</h2>
+    <bdo dir="ltr">Esse texto está no formato LEFT-TO-RIGHT</bdo> <br>
+    <bdo dir="rtl">Esse texto está no formato RIGHT-TO-LEFT</bdo>
+</body>
+</html>

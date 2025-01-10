@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+        color: rgb(2, 164, 2);
+        font-weight: bold;
+    }
+
+    
+    a:visited{
+        color: darkgreen;
+    }
+    
+    
+    a:hover{
+        color: black;
+        text-decoration: underline ;
+        background: none;
+    }
+    
+    a:active{
+        background: none;
+        color: darkorange;
+        text-decoration: none;
+    }
+
+    .especial{
+        background-color: darkgreen;
+        width: 200px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Pseudo-elementos são usados para estilizar o conteúdo de um determinado elemento escolhido. */
+    .especial::after{
+        content: ' ⋆';
+    }
+
+    .especial::before{
+        content: '⋆ ';
+    }
+
+    p{
+        font-size: 20px;
+    }
+    h1 + p::first-letter{
+        font-size:5em;
+        /* Usado para o elemento fique flutuando em volta do elemento. */
+        float: left;
+        /* O margin segue esse padrão: top, right, bottom, left */
+        margin: 0px 10px 0px 10px;
+    }
+
+    p + p::first-line {
+        font-weight: bolder;
+    }
+
+    p::selection{
+        background-color: darkorchid;
+        color: white;
+    }
+
+    input::placeholder{
+        color: black;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Github do Curso em Vídeo</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do Curso em Vídeo</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site Curso em Vídeo</a></li>
+    </ul>
+    <h1>Personalização de Texto</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas et fugiat unde corporis hic eaque minus reprehenderit praesentium quasi aperiam voluptate, velit soluta odit. Facilis obcaecati ducimus et provident quam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil consequuntur modi inventore. Beatae, veniam voluptas. Eum quas doloribus aspernatur ea a excepturi id deleniti, libero rem, beatae consequuntur accusamus tempore.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet modi enim, assumenda accusantium recusandae reprehenderit quaerat id culpa aliquam. Placeat optio quo vitae excepturi saepe possimus pariatur dolore reiciendis ducimus!</p>
+    <h1>Manipulando o Placeholder</h1>
+    <input type="text" placeholder="Digite">
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right,#f1a44b,#c3792e, #FF8400);
+    background-attachment: fixed;
+}
+
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #8b4a05ba;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #00B4EB;
+    text-shadow: 1px 1px 2px #065770bd;
+    text-align: center;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EB912D;
+}
+
+p {
+    text-align: justify;
+    /* Usado para diezer o peso  */
+    font-weight: bold;
+}
+
+code{
+    text-align: left;
+}

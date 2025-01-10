@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+            /* O @font-face 'cria basicamente uma nova fonte para o meu site' */
+            @font-face {
+                font-family: 'Merry Christmans';
+                src: url('fontes/MerryChristmasFlake.ttf') format('truetype')
+                /* 
+                    Tipos de format() 
+                    - opentype (otf)
+                    - truetype (ttf)
+                    - embedded-opentype
+                    - truetype-aat (Apple Advanced Typography)
+                    - svg
+                */                
+            }
+
+            body{
+                background-color: black;
+            }
+
+            h1,h2{
+                font-family: 'Merry Christmans','Times New Roman', serif;
+                font-size: 3em;
+                font-weight: normal;
+                color: white;
+            }
+
+            p{
+                background-color: aquamarine;
+                border-radius: 5px;
+                text-align: justify;
+            }
+
+            button{
+                background-color: aqua;
+                border-radius: 1em;
+                font-family:'Times New Roman', Times, serif;
+            }
+    </style>
+</head>
+<body>
+    <h1>Título Principal</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod placeat ut aliquam et? Dignissimos aperiam, alias velit commodi laudantium veniam molestiae vel ducimus quo odio illum, minus, eveniet est quaerat!</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod placeat ut aliquam et? Dignissimos aperiam, alias velit commodi laudantium veniam molestiae vel ducimus quo odio illum, minus, eveniet est quaerat!</p>
+
+        <h2>Título Secundário</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nam assumenda, non at consequuntur quam illo voluptate porro rerum ducimus explicabo. Similique provident fugit repudiandae laboriosam fugiat, nobis culpa porro.</p>
+
+        <a href="font01.html" rel="prev" target="_self"><button type="button">Voltar para a página inicial</button></a>
+</body>
+</html>

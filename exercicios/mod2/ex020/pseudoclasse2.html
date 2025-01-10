@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+
+        h1{
+            transition: all 1s ease-out;
+            width: 200px;
+        }
+
+        h1:hover{
+            background-color: red;
+            width: 200px;
+        }
+
+        #checkbox:checked{
+                width: 20px;
+                height: 20px;
+        }
+
+        /* Quando a caixa de seleção estiver checada o parágrafo será estilizado. */
+        #checkbox2:checked + p {
+            background-color: red;
+            color: white;
+            width: 200px;
+        }
+        input:hover{
+            background-color: darkblue;
+        }
+
+        /* Quando o elemento for selecionado. */
+        #text:focus{
+            background-color: lightblue;
+            color: black;
+            font-weight: bold;
+            box-shadow: 2px 2px 3px black;
+            outline: none;
+        }
+
+        #password:disabled{
+            background-color: lightcoral;
+            cursor: not-allowed;
+        }
+        a:link{
+            color: orangered;
+        }
+
+        a:visited{
+            color: darkmagenta;
+        }
+
+        a:hover{
+            background-color: darkslateblue;
+            color: white;
+            text-decoration: none;
+        }
+
+        a:active{
+            background-color: darkorange;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .pai li:first-child{
+            background-color: red;
+        }
+
+        .pai li:last-child{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem</h1>
+        <input type="text" id="text">
+        <input type="password" id="password" disabled>
+        <input type="checkbox" id="checkbox" checked>
+        <input type="checkbox" id="checkbox2" checked>
+        <p>Hello World</p>
+        <!-- Usamos a '#' como referência para fazer um simples teste. -->
+        <p><a href="#">Lorem ipsum dolor sit amet</a> consectetur adipisicing elit. <a href="meulink">Itaque natus distinctio laudantium velit tenetur minus ab ducimus eos consectetur</a>? Minima nisi nihil quos repellat fuga eos voluptatum consequuntur fugit natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima, vitae quaerat sequi quasi amet consectetur quis possimus, facilis rerum cum molestiae ullam iste! Impedit accusantium consequatur asperiores molestias recusandae.</p>
+        <h1>Lista</h1>
+        <ul class="pai">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+</body>
+</html>

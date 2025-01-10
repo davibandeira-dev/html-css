@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /* Podemos usar o '*' para dizer que todos os elementos terão essas declarações */
+        body{
+            background-image: linear-gradient(to right,rgb(255, 136, 0),orange,rgba(108, 248, 248, 0.784),aqua);
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas 
+                cm,mm,in,px,pt,pc
+
+               Medidas Relativas
+               em,ex,rem,vw,vh,%
+
+               16 px geralmente é igual a 1 em
+
+            */
+            font-size: 2em;
+            text-decoration: underline ;
+        }
+        h2{
+            /* shorthand font 
+            font-style -> font-weight -> font-size -> font-family
+            */
+            /* font: italic bold 1.5em 'Arial',sans-serif; */
+            font: 900 1.5em 'Arial',sans-serif;
+            text-decoration: underline;
+        }
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            /* lighter normal bold bolder */
+            font-style: italic;
+        }
+        button{
+            background-color: white;
+            border-radius: 10px;
+        }
+    </style>                    
+</head>
+<body>
+    <h1>Trabalhando com fontes em CSS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, pariatur illum aliquid blanditiis qui molestiae recusandae consequatur, ipsum ipsam omnis molestias minus aperiam, magni ea aspernatur sint sit. Eum, doloremque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos pariatur, enim unde laudantium nobis corrupti provident officiis repudiandae magnam sapiente quo voluptas tempora voluptatem. Corrupti alias dolore optio expedita tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolor voluptatum itaque eligendi, alias ea ipsam magnam veritatis. Odit reprehenderit accusamus tempora sit asperiores voluptatem similique sunt tempore nostrum illum?</p>
+        <h2>Subtítulo do Exercício</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium natus totam, adipisci aspernatur officiis est. Pariatur sint voluptatibus quidem libero nemo incidunt repudiandae ipsum soluta ipsa excepturi aspernatur, sapiente consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sequi sit atque, porro, harum voluptatibus laudantium recusandae velit molestias non expedita alias voluptatum hic excepturi omnis quae cumque sapiente. Similique.</p>
+        <button><a href="font02.html">Ir para a próxima página</a></button>
+</body>
+</html>

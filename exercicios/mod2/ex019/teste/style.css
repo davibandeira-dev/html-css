@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* Seletor Universal */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3,p{
+   color: purple ;
+}
+
+/* Seletor Descendente */
+/* body section p{
+    color: red;
+} */
+
+/* Uma forma de selecionar mais de uma elemento. */
+body section h3,
+body section {
+    color: red;
+}
+
+/* Seletor de classe */
+.subtitle{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Seletor de classe descendente */
+.subtitle-content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.subtitle-content .text{
+    background-color: aqua;
+    color: rgb(255, 106, 0);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.479);
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Ainda mais específico */
+.subtitle-content h1.heading{
+    color: red;
+    background-color: black;
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pai{
+    color: red;
+}
+
+/* Por padrão o navegador irá herdar as características da classe pai ou acima dele usando a propriedade: "color:inherit;". */
+.pai div {
+    /* A cor padrão do programa ou cor inicial. */
+    color: initial;
+}
+
+.pai .filha{
+   background-color: white;
+   font-weight: bold;
+}
+
+div.pai.filha{
+    color: blue;
+    background-color: black;
+}
+/* Seletor Filho Direto */
+.pai > .filha{
+    color: red;
+    background-color: rgb(128, 0, 0);
+}
+
+.pai > .filha > .filha > span > .hello{
+    background-color: yellow;
+}

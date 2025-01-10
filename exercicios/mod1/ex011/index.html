@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        <!-- The max and min, they meaning respectively -> less than or equal to and greater than or equal to. -->
+        <!-- Eu coloco mais 50 pixels pelo simples fato de adaptar a imagem de acordo com o tamanho do navegador sem usar a barra de rolagem. -->
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem grande">
+        </picture>
+        <!-- <picture>
+            <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+            <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-p.png" alt="Imagem grande">
+        </picture> -->
+    <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <!-- Temos duas maneiras de colocar áudio ou áudios no meu site. -->
+        <p>Primeira forma:</p>
+        <!-- Muitos navegadores não tem compatibilidade com o formato MP3, por isso essa primeira forma fica muito limitada -->
+        <audio src="midia/you-had-to-be.mp3" controls></audio>
+        <p>Segunda forma:</p>
+        <!-- Nesse caso a ordem é importante, pois se um não funcionar teremos o outro formato -->
+         <!-- Se eu usar o autoplay necessariamente eu tenho que usar o auto, pois o autoplay irá reproduzir o áudio automaticamente e ele precisa estar completamente carregado.-->
+        <audio preload="auto" controls  >
+            <source src="midia/you-had-to-be.mp3" type="audio/mpeg">
+            <source src="midia/you-had-to-be.ogg" type="audio/ogg">
+            <!-- Evite usar arquios WAV pois eles são muito pesados. -->
+            <source src="midia/you-had.wav" type="audio/wav">
+            <p>Seu navegador não suporta o áudio <a href="midia/you-had-to-be.mp3" download="you-had-to-be.mp3" type="audio/mpeg"></a></p>
+        </audio>
+</body>
+</html>

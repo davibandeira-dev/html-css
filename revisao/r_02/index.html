@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores em HTML</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        body{
+            background-color: lightgreen;
+        }
+
+        #principal{
+            font-family: 'Playfair Display';
+            background-color: #fff;
+            color: green;
+            width: 500px;
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px 40px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.341);
+
+        }
+
+        div > h2{
+            display: inline;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        #checkbox:checked ~ p{
+            display: block;
+        }
+
+        #python p{
+            transition: all 2s ease-in;
+            background-color: yellow;
+            padding: 10px;
+            border-radius: 20px 5px;
+        }
+        
+        #php p{
+            transition: all 2s ease-in;
+            background-color: rgb(207, 0, 254);
+            padding: 10px;
+            border-radius: 20px 5px;
+        }
+        
+        #java p{
+            transition: all 2s ease-in;
+            background-color: rgb(255, 0, 0);
+            padding: 10px;
+            border-radius: 20px 5px;
+        }
+        
+        #js p{
+            transition: all 2s ease-in;
+            background-color: yellow;
+            padding: 10px;
+            border-radius: 20px 5px;
+        }
+        
+        
+        p{
+            font-size: 20px;
+            text-indent: 10px;
+            text-align: justify;
+        }
+
+        #p_principal::selection{
+            background-color: rgb(4, 103, 4);
+            color: white;
+        }
+
+</style>
+<body>
+    <h1 id="principal">Aprendendo Back-end</h1>
+    <h2>O que é o Back-end?</h2>
+    <p id="p_principal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquam facere accusamus. Perspiciatis possimus architecto iusto doloribus, harum amet voluptate quas est labore laborum quidem alias beatae, eaque reprehenderit fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sit quos vitae, quo ducimus eaque voluptatibus suscipit et eum ut optio nisi laborum minus natus impedit veniam placeat molestias modi.</p>
+    <h1 id="pergunta">Quais linguagens são usadas?</h1>
+    <div id="python">
+        <h2>Python</h2>
+        <input type="checkbox" id="checkbox">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis minima libero reprehenderit, velit quae iure maxime corrupti minus dolorum? Voluptates molestiae eligendi itaque tempora minima asperiores sint ipsa in nobis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora exercitationem pariatur ullam quibusdam. Blanditiis ea impedit similique, culpa mollitia est doloribus enim eum corporis, dolorum maxime officia, reiciendis quisquam!</p>
+    </div>
+    <div id="php">
+        <h2>PHP</h2>
+        <input type="checkbox" id="checkbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt excepturi maiores debitis. Nam sit explicabo nulla corrupti libero cumque beatae perferendis tenetur, doloremque maiores itaque, nihil perspiciatis laboriosam deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vel assumenda modi alias consectetur, sequi, eveniet cupiditate corporis odit totam repellat illo suscipit unde sint, dicta consequuntur nihil labore voluptate?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore velit omnis consectetur dolores. Illum facilis, officiis quidem maxime inventore facere voluptates eligendi molestias quis? Atque maiores alias autem nam!</p>
+    </div>
+    <div id="java">
+        <h2>Java</h2>
+        <input type="checkbox" id="checkbox">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates itaque obcaecati autem minima, beatae, nam repellendus totam accusamus eius tenetur quaerat nostrum impedit magni! Nostrum culpa exercitationem fugiat ab. Officia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia labore inventore molestiae dolor, nemo repellendus doloremque rem sequi ut consequatur. Explicabo illo sequi distinctio odio, fugiat rerum voluptatem culpa.</p>
+    </div>
+    <div id="js">
+        <h2>Java Script</h2>
+        <input type="checkbox" id="checkbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem, dolor, quaerat est ipsum similique illum nostrum eius architecto nesciunt voluptatibus animi vel voluptatem. Officiis natus maxime consequatur quos omnis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione inventore id pariatur aspernatur voluptatum blanditiis beatae nihil accusamus? Dolor deleniti qui odit unde alias officia debitis reprehenderit, porro assumenda ratione.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa delectus illum dolor ad nobis dolore, quibusdam quo perferendis repudiandae modi repellendus sint explicabo nulla fuga fugit unde officiis cum dicta.</p>
+    </div>
+</body>
+</html>

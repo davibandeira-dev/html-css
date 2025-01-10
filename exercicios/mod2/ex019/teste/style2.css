@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* Seletor Descendente e Filho Direto */
+div > section > p{
+    background-color: aqua;
+}
+
+/* Seletor Adjacente Direto */
+div + p {
+    background-color: yellow;
+}
+
+p + h1 {
+    color: red;
+}
+
+/* Seletor de Irmãos Gerais */
+h1 ~ p{
+    color: green;
+}
+
+

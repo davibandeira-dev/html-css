@@ -56,10 +56,15 @@ section{
 section > p{
     font-family: var(--font03);
     font-size: 4.5vw;
+    padding-bottom: 2em;
 }
 
 section.normal{
     background-color: white;
+}
+
+section.imagem{
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.581);
 }
 
 section.imagem > p{
@@ -73,14 +78,16 @@ section.imagem > p{
 
 section.imagem#img01{
     background-image: url(../imagens/background001.jpg);
-    background-size: 100% 100%;
+    background-position: right center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 section.imagem#img02{
     background-image: url(../imagens/background002.jpg);
-    background-position: 100% 100%;
+    background-position: right center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

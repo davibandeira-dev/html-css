@@ -32,7 +32,7 @@ html, body{
 
 #cabecalho > h1{
     font-variant: small-caps;
-    font-size: 60px;
+    font-size: 7vw;
     font-family: var(--font02);
 }
 
@@ -55,7 +55,7 @@ section{
 
 section > p{
     font-family: var(--font03);
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
 
 section.normal{
@@ -64,10 +64,11 @@ section.normal{
 
 section.imagem > p{
     display: inline-block;
-    background-color: rgba(169, 169, 169, 0.414);
-    color: white;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.326);
     padding: 10px;
+    background-color: rgba(169, 169, 169, 0.355);
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.329);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.619);
 }
 
 section.imagem#img01{

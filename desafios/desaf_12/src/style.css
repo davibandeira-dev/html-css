@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
-    --font01: 'Passion One', sans-serif;
-    --font02: 'Sriracha', serif;
+    --font01: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    --font02: 'Passion One', cursive;
+    --font03: 'Sriracha', cursive;
 }
 
 *{
@@ -32,7 +33,7 @@ html, body{
 #cabecalho > h1{
     font-variant: small-caps;
     font-size: 60px;
-    font-family: var(--font01);
+    font-family: var(--font02);
 }
 
 #cabecalho a , footer a {
@@ -49,11 +50,24 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     font-size: 2em;
-    font-family: var(--font02);
+    padding-left: 30px;
+}
+
+section > p{
+    font-family: var(--font03);
+    font-size: 5vw;
 }
 
 section.normal{
     background-color: white;
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(169, 169, 169, 0.414);
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.326);
+    padding: 10px;
 }
 
 section.imagem#img01{

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      width: 500px;
+      border-collapse: collapse;
+      position: relative;
+    }
+
+    caption {
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    thead>tr>th {
+      position: sticky;
+      top: -1px;
+      background-color: gray;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    tr>td:first-child {
+      text-align: center;
+    }
+
+    tbody tr:nth-child(odd) {
+      text-decoration: underline;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: lightgray;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      background-color: gray;
+      color: white;
+    }
+
+    td.num {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Uso de Tabelas Grandes</h1>
+  <!-- 
+    ANATOMIA DE TABELAS GRANDES
+    CAPTION (TÍTULO DA TABELA)
+    TABLE
+      THEAD
+        tr, td, th (table head)
+      TBODY
+        tr, td, th (table head)
+      TFOOT
+        tr, td, th (table head)      
+  -->
+  <table>
+    <caption>Tabela do Brasileirão Série B 2024</caption>
+    <thead>
+      <tr>
+        <th scope="col" style="width: 50px;">Colocação</th>
+        <th scope="col">Clube</th>
+        <th scope="col">Pontos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1°</td>
+        <td>Santos</td>
+        <td class="num">68</td>
+      </tr>
+      <tr>
+        <td>2°</td>
+        <td>Mirassol</td>
+        <td class="num">67</td>
+      </tr>
+      <tr>
+        <td>3°</td>
+        <td>Sport Recife</td>
+        <td class="num">66</td>
+      </tr>
+      <tr>
+        <td>4°</td>
+        <td>Ceará SC</td>
+        <td class="num">64</td>
+      </tr>
+      <tr>
+        <td>5°</td>
+        <td>Novorizontino</td>
+        <td class="num">64</td>
+      </tr>
+      <tr>
+        <td>6°</td>
+        <td>Goiás</td>
+        <td class="num">63</td>
+      </tr>
+      <tr>
+        <td>7°</td>
+        <td>Operário</td>
+        <td class="num">58</td>
+      </tr>
+      <tr>
+        <td>8°</td>
+        <td>América-MG</td>
+        <td class="num">58</td>
+      </tr>
+      <tr>
+        <td>9°</td>
+        <td>Vila Nova</td>
+        <td class="num">55</td>
+      </tr>
+      <tr>
+        <td>10°</td>
+        <td>Avaí</td>
+        <td class="num">53</td>
+      </tr>
+      <tr>
+        <td>11°</td>
+        <td>Amazonas FC</td>
+        <td class="num">52</td>
+      </tr>
+      <tr>
+        <td>12°</td>
+        <td>Coritiba</td>
+        <td class="num">50</td>
+      </tr>
+      <tr>
+        <td>13°</td>
+        <td>Paysandu</td>
+        <td class="num">50</td>
+      </tr>
+      <tr>
+        <td>14°</td>
+        <td>Botafogo SP</td>
+        <td class="num">45</td>
+      </tr>
+      <tr>
+        <td>15°</td>
+        <td>Chapecoense</td>
+        <td class="num">44</td>
+      </tr>
+      <tr>
+        <td>16°</td>
+        <td>CRB</td>
+        <td class="num">43</td>
+      </tr>
+      <tr>
+        <td>17°</td>
+        <td>Ponte Preta</td>
+        <td class="num">38</td>
+      </tr>
+      <tr>
+        <td>18°</td>
+        <td>Ituano</td>
+        <td class="num">37</td>
+      </tr>
+      <tr>
+        <td>19°</td>
+        <td>Brusque</td>
+        <td class="num">33</td>
+      </tr>
+      <tr>
+        <td>20°</td>
+        <td>Guarani</td>
+        <td class="num">33</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="2" scope="row">Total de pontos</th>
+        <td class="num"><strong>1041</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam labore perspiciatis libero obcaecati accusantium
+    corrupti vero quia recusandae pariatur, nihil quidem eum alias quos doloremque distinctio nulla ipsam dolorem
+    possimus!
+    Nulla quam, recusandae dolorum tempora necessitatibus tempore voluptate dicta ullam impedit sed. Error quaerat ex
+    adipisci maiores impedit eos, modi dolor molestiae aliquam eum nemo recusandae, mollitia distinctio eveniet
+    laboriosam.
+    Perferendis, exercitationem laborum. Magni ducimus quia soluta architecto possimus placeat. Magnam iste rerum ipsam
+    aliquid? Saepe natus aspernatur tempora soluta hic deserunt recusandae quam impedit? Ut similique earum doloremque
+    voluptatem.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officia mollitia, adipisci deleniti libero a
+    commodi explicabo cumque molestias. Facilis accusantium quae quam, ullam laboriosam ipsam! Iusto minus voluptate ea!
+    Architecto voluptatum pariatur non esse nesciunt veritatis asperiores dolore repellat laboriosam incidunt magni
+    fugiat corrupti cumque eveniet dignissimos ab quae, quia excepturi quo! Sequi ipsa omnis, ullam ut incidunt libero.
+    Perspiciatis voluptatum voluptatibus doloremque facilis labore vitae, repellat amet quo consequuntur autem deleniti
+    excepturi fugit nihil ratione. Quidem dignissimos unde tenetur inventore, iste nesciunt, quisquam beatae voluptates
+    minima ipsa odit.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officia mollitia, adipisci deleniti libero a
+    commodi explicabo cumque molestias. Facilis accusantium quae quam, ullam laboriosam ipsam! Iusto minus voluptate ea!
+    Architecto voluptatum pariatur non esse nesciunt veritatis asperiores dolore repellat laboriosam incidunt magni
+    fugiat corrupti cumque eveniet dignissimos ab quae, quia excepturi quo! Sequi ipsa omnis, ullam ut incidunt libero.
+    Perspiciatis voluptatum voluptatibus doloremque facilis labore vitae, repellat amet quo consequuntur autem deleniti
+    excepturi fugit nihil ratione. Quidem dignissimos unde tenetur inventore, iste nesciunt, quisquam beatae voluptates
+    minima ipsa odit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio aspernatur perferendis maxime, quam
+    quis, laboriosam est eum blanditiis ea fugit laudantium voluptate. Quidem alias, enim omnis reprehenderit iusto
+    minus!
+    Minus, voluptates quo voluptate atque sapiente maiores sed mollitia provident neque nesciunt dolorum velit nostrum
+    officia et veniam, consequatur possimus voluptatibus a quod dolores amet laudantium odit. Distinctio, iure aliquam.
+    Eos fugiat at tenetur ad libero eveniet vero nulla. Enim veritatis porro vitae placeat velit corrupti consequuntur
+    voluptas nesciunt dicta alias at nihil delectus, omnis molestias. Eius magnam similique quam.</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam voluptate placeat minus quasi fugit? Aperiam
+    nisi veniam unde iusto vero exercitationem reprehenderit facere, rerum sunt corrupti eos. Placeat, fugiat quo?
+    Autem voluptatibus accusamus, similique est ipsum praesentium, minus, culpa fuga nisi in inventore dolores ducimus
+    vitae distinctio reprehenderit. Eveniet vero aliquid dolorem ut maxime itaque sunt illo, veritatis officiis iste?
+    Aliquam rerum id expedita velit eius quidem pariatur iste aperiam dolorum ex, modi ad reiciendis totam possimus illo
+    voluptates similique ipsum vitae quo. Dicta repellat saepe doloribus. Nulla, repellat sunt.</p>
+</body>
+
+</html>

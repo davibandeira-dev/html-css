@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition and Transform</title>
+  <style>
+    body {
+      background-image: url('imagens/target001.png');
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    div {
+      background-color: yellow;
+      width: 350px;
+      height: 200px;
+      border: 2px solid black;
+    }
+
+    div:hover {
+      transition: height 1s;
+      height: 500px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

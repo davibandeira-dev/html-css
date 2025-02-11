@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplos com hover</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         /* O sinal de '>(greater than)' faz referência ao parágrafo que está dentro da div. */
-        div > p{
+        div>p {
             display: none;
         }
 
         /* Ao passar o mouse por cima, como o parágrafo irá se comportar.*/
-        div:hover > p{
+        div:hover>p {
             display: block;
             background-color: orangered;
             width: 200px;
@@ -22,13 +24,15 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Exemplo de hover</h1>
     <p>Passe o mouse no texto abaixo.</p>
-        <div>
-            Passe o mouse aqui!
-            <p>TEXTO ESCONDIDO!</p>
-        </div>
-        <p>Fim do exemplo</p>
+    <div>
+        <span>Passe o mouse aqui!</span>
+        <p>TEXTO ESCONDIDO!</p>
+    </div>
+    <p>Fim do exemplo</p>
 </body>
+
 </html>

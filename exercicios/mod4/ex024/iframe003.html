@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de iframes</title>
+  <style>
+    iframe {
+      width: 95vw;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Faça uma escolha</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in numquam ullam? Doloremque cupiditate
+    quos odit? A magni dolor, pariatur quam iste ab possimus numquam fugiat quisquam provident eum aperiam. Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Magnam excepturi a in natus debitis est quia sequi sapiente aperiam,
+    eius, sit nemo officiis aliquid suscipit voluptates dolor fuga id esse.</p>
+  <ul>
+    <li><a href="paginas_extras/pag001.html" target="frame">Primeira página</a></li>
+    <li><a href="paginas_extras/pag002.html" target="frame">Segunda página</a></li>
+    <li><a href="paginas_extras/pag003.html" target="frame">Terceira página</a></li>
+  </ul>
+  <p>Recusandae magnam quis aut quae! Repellat enim earum illo quis iusto deserunt eum itaque facilis fuga, ea eaque
+    libero, accusantium esse neque! Aliquid ullam labore voluptas obcaecati commodi dolorum necessitatibus? Lorem ipsum,
+    dolor sit amet consectetur adipisicing elit. Delectus reiciendis ea repudiandae totam repellat, vel odit veniam
+    error quas, obcaecati, corporis dolor temporibus recusandae a laboriosam odio tempore. Hic, cupiditate.</p>
+  <!-- Será usado para redirecionar uma determinada página para o meu frame. -->
+  <!-- O srcdoc é usado para colocar códigos em HTML, quando queremos que fique um conteúdo estático. -->
+  <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" name="frame" frameborder="1">
+    <p>Infelizmente seu navegador não é compatível com isso.</p>
+  </iframe>
+  <p>Recusandae magnam quis aut quae! Repellat enim earum illo quis iusto deserunt eum itaque facilis fuga, ea eaque
+    libero, accusantium esse neque! Aliquid ullam labore voluptas obcaecati commodi dolorum necessitatibus? Lorem ipsum,
+    dolor sit amet consectetur adipisicing elit. Delectus reiciendis ea repudiandae totam repellat, vel odit veniam
+    error quas, obcaecati, corporis dolor temporibus recusandae a laboriosam odio tempore. Hic, cupiditate.</p>
+</body>
+
+</html>

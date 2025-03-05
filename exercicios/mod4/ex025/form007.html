@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background-color: gray ;
+    }
+
+    h1{
+      position: relative;
+    }
+
+    form{
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      background-color: white;
+      width: 400px;
+      height: 450px;
+      border-radius: 10px;
+    }
+
+    section#google{
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    section#google button{
+      background-color: white;
+      padding: 10px 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+    }  
+
+    section#google button::before{
+      content: url("img/favicon.ico");
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Formulário</h1>
+  <form action="" method="post">
+    <section id="google">
+      <button> Continuar com o Google</button>
+      <p>ou</p>
+    </section>
+    <section id="informacoes">
+      <div id="divemail">
+        <label for="iemail">E-MAIL</label><br>
+        <input type="email" name="email" id="iemail" required>
+      </div>
+      <div id="divsenha">
+        <label for="isenha">SENHA</label><br>
+        <input type="password" name="senha" id="isenha" required>
+      </div>
+    </section>
+    <section>
+      <button>Fazer Login</button>
+      <a href="#">Usar login único</a>
+      <a href="#">Redefinir senha</a>
+      <p>Não tem uma conta?<a href="#">Crie uma!</a></p>
+    </section>
+  </form>
+</body>
+</html>

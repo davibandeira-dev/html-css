@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Exemplo de Formulário</h1>
+  <form action="cadastro.js" method="post">
+    <!-- O atributo "name" irá formar um campo ou grupo específico. -->
+    <fieldset>
+      <legend>Sexo</legend>
+      <input type="radio" name="sexo" id="imasc" value="Mas"checked>
+      <label for="imasc">Masculino</label><br>
+      <input type="radio" name="sexo" id="ifemi" value="Fem">
+      <label for="ifemi">Feminino</label>
+    </fieldset>
+    <!-- <p>
+      <input type="reset" value="Limpar">
+    </p> -->
+    <fieldset>
+      <legend>Esportes Favoritos</legend>
+      <input type="checkbox" name="esporte" id="iesfut" value="Fut"> 
+      <label for="iesfut">Futebol</label><br>
+      <input type="checkbox" name="esporte" id="iesbas" value="Bas"> 
+      <label for="iesbas">Basquete</label><br>
+      <input type="checkbox" name="esporte" id="iesvol" value="Vôl"> 
+      <label for="iesvol">Vôlei</label><br>
+      <input type="checkbox" name="esporte" id="iesten" value="Ten"> 
+      <label for="iesten">Tênis</label><br>
+      <input type="checkbox" name="esporte" id="iesnat" value="Nat">
+      <label for="iesnat">Natação</label><br>
+    </fieldset>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>

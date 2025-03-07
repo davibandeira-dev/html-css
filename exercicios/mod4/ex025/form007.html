@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>Exemplo de Formulário</h1>
-  <form action="cadastro.js" method="get" autocomplete="on">
+  <form action="cadastro.js" method="post" autocomplete="on">
     <p>
       <label for="iest">Estado:</label>
       <select name="estado" id="iest">                
@@ -35,6 +35,12 @@
         <option>Desenvolvedor</option>
         <option>Professor</option>
       </datalist>
+    </p>
+
+    <p>
+      <label for="imsg">Mensagem:</label><br>
+      <!-- Podemos usar o atributo "resize: none" como uma forma de controlar o redisionamento da minha caixa de texto. -->
+      <textarea name="msg" id="imsg" cols="30"  rows="10" style="resize: none;" placeholder="Sua mensagem aqui!"></textarea>
     </p>
 
     <input type="submit" value="Enviar">

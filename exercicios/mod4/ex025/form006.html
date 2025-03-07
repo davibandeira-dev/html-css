@@ -8,7 +8,7 @@
 <body>
   <h1>Exemplo de Formulário</h1>
   <!-- Coloquei no "method=post" pois além de ser um arquivo sensível, também tem a questão de ultrapassar os 3,000 caracteres permitidos.-->
-  <form action="cadastro.js" method="post">
+  <form action="cadastro.js" method="post" enctype="multipart/form-data">
 
     <p>
       <label for="icor">Cor:</label>
@@ -20,12 +20,13 @@
     </p>
     <p>
       <label for="ifoto">Foto de Perfil:</label>
-      <input type="file" name="foto" id="ifoto" >
+      <input type="file" name="foto" id="ifoto">
     </p>
     <p>
       <input type="submit" value="Enviar">
       <input type="reset" value="Limpar">
     </p>
+  </form>
   </form>
 </body>
 </html> 

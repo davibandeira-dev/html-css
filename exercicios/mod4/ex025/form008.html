@@ -18,11 +18,12 @@
     </p>
     <p>
       <label for="isoma">Soma:</label>
-      <output name="soma" id="isoma">0</output>
+      <!--Usaremos para realizar uma relação entre os elementos usados para o resultado da ação do usuário.-->
+      <output for="in1 in2" name="soma" id="isoma">0</output>
     </p>
 
     <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
+    <input type="reset" value="Limpar" onclick="isoma.innerHTML = 0">
   </form>
 </body>
 </html>
